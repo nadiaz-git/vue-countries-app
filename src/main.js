@@ -3,7 +3,7 @@ import App from './App.vue';
 import axios from 'axios';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faMoon, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faMoon, faSun, faSearch, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
@@ -13,6 +13,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.prototype.$http = axios;
 library.add(faMoon);
 library.add(faSearch);
+library.add(faSun);
+library.add(faArrowLeft);
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue);
