@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <CountryList></CountryList>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CountryList from './components/CountryList.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+      CountryList
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
 }
+
+p, span {
+  font-weight: 300;
+}
+
+p.light {
+  font-weight: 600;
+}
+
+p.bold {
+  font-weight: 800;
+}
+
+  .bg-light {
+    background-color: hsl(0, 0%, 98%);
+  }
+
+  .bg-light-header {
+    background-color: hsl(0, 0%, 100%);
+  }
 </style>
